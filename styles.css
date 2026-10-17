@@ -1,0 +1,897 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+}
+
+
+/* NAVIGATION */
+
+.navbar {
+    background: #172554;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 8%;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #38bdf8;
+}
+
+
+/* HOME HERO */
+
+.hero {
+    min-height: 550px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 60px 10%;
+
+    background:
+        linear-gradient(
+            120deg,
+            #172554,
+            #1e40af,
+            #0891b2
+        );
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.welcome {
+    color: #67e8f9;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    color: #bae6fd;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    line-height: 1.7;
+    max-width: 600px;
+}
+
+
+/* BUTTONS */
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background: #38bdf8;
+
+    color: #172554;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+.btn:hover {
+    background: #7dd3fc;
+}
+
+.btn.secondary {
+    background: transparent;
+
+    border: 2px solid #38bdf8;
+
+    color: white;
+}
+
+
+/* ABOUT */
+
+.about {
+    text-align: center;
+
+    padding: 60px 15%;
+
+    background: white;
+}
+
+.about h2 {
+    color: #172554;
+
+    margin-bottom: 20px;
+
+    font-size: 30px;
+}
+
+.about p {
+    line-height: 1.8;
+    color: #546e7a;
+}
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    padding: 50px 8%;
+
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+
+    width: 280px;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+
+    border-top: 4px solid #0891b2;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+
+    color: #172554;
+}
+
+
+/* COMMON PAGE */
+
+.page {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 60px 25px;
+}
+
+.page > h1 {
+    text-align: center;
+
+    color: #172554;
+
+    margin-bottom: 40px;
+
+    font-size: 35px;
+}
+
+
+/* RESUME */
+
+.resume-section {
+    background: white;
+
+    padding: 30px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.resume-section h2 {
+    color: #0891b2;
+
+    margin-bottom: 18px;
+
+    border-bottom: 2px solid #e0f2fe;
+
+    padding-bottom: 8px;
+}
+
+.resume-section p {
+    line-height: 1.7;
+
+    color: #546e7a;
+}
+
+
+/* TABLE */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+th {
+    background: #172554;
+
+    color: white;
+
+    padding: 14px;
+}
+
+td {
+    padding: 13px;
+
+    border: 1px solid #ddd;
+
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f0f9ff;
+}
+
+
+/* PROJECT */
+
+.project {
+    padding: 20px 0;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.project:last-child {
+    border-bottom: none;
+}
+
+.project h3 {
+    color: #172554;
+
+    margin-bottom: 8px;
+}
+
+
+/* LIST */
+
+.list {
+    padding-left: 25px;
+
+    line-height: 2;
+}
+
+
+/* BIODATA */
+
+.biodata {
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    gap: 40px;
+
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.profile-photo {
+    display: flex;
+
+    align-items: flex-start;
+}
+
+.photo-placeholder {
+    width: 170px;
+
+    height: 200px;
+
+    background: #e0f2fe;
+
+    border: 3px solid #0891b2;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #0891b2;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+.bio-details {
+    flex: 1;
+}
+
+.bio-row {
+    display: flex;
+
+    padding: 13px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.bio-row strong {
+    width: 160px;
+
+    color: #172554;
+}
+
+.bio-row span {
+    color: #546e7a;
+}
+
+
+/* SKILLS */
+
+.skill-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.skill-card {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.skill-card h2 {
+    color: #172554;
+
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #607d8b;
+
+    margin-bottom: 15px;
+}
+
+.skill-bar {
+    height: 10px;
+
+    background: #e2e8f0;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.skill-bar span {
+    display: block;
+
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #0891b2,
+        #38bdf8
+    );
+}
+
+
+/* HOBBIES */
+
+.hobbies {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+.hobbies span {
+    background: #e0f2fe;
+
+    color: #0369a1;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+}
+
+
+/* CONTACT */
+
+.contact-container {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+}
+
+.contact-info,
+#contactForm {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.contact-info h2 {
+    color: #172554;
+
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    color: #607d8b;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #eee;
+
+    color: #455a64;
+}
+
+#contactForm label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    font-weight: bold;
+
+    color: #172554;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    font-family: Arial;
+}
+
+#contactForm textarea {
+    resize: vertical;
+}
+
+#contactForm button {
+    width: 100%;
+
+    padding: 13px;
+
+    background: #0891b2;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background: #0e7490;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #172554;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 13px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .skill-grid,
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .biodata {
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        justify-content: center;
+    }
+
+    .bio-row {
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+    .bio-row strong {
+        width: auto;
+    }
+}
+/* =================================
+   BIO-DATA PAGE
+================================= */
+
+.biodata-page {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    padding: 60px 70px;
+
+    background: #ffffff;
+
+    min-height: 650px;
+}
+
+
+/* HEADER */
+
+.biodata-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+
+.biodata-title h1 {
+    font-size: 42px;
+
+    color: #172554;
+
+    margin: 0;
+}
+
+
+.biodata-title h1::first-letter {
+    color: #0891b2;
+}
+
+
+/* PROFILE PHOTO */
+
+.profile-image {
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    border: 5px solid #0891b2;
+
+    padding: 5px;
+
+    overflow: hidden;
+
+    background: white;
+}
+
+
+.profile-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* DETAILS */
+
+.personal-details {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+.detail-row {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    padding: 17px 10px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.detail-label {
+    font-weight: bold;
+
+    color: #172554;
+
+    font-size: 16px;
+}
+
+
+.detail-value {
+    color: #455a64;
+
+    font-size: 16px;
+}
+
+
+/* PROFILE SECTION */
+
+.profile-section {
+    margin-top: 45px;
+
+    padding: 25px;
+
+    border-left: 4px solid #0891b2;
+
+    background: #f0f9ff;
+
+    border-radius: 5px;
+}
+
+
+.profile-section h2 {
+    color: #172554;
+
+    margin-bottom: 12px;
+}
+
+
+.profile-section p {
+    color: #546e7a;
+
+    line-height: 1.8;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #172554;
+
+    color: #cbd5e1;
+
+    text-align: center;
+
+    padding: 20px;
+
+    line-height: 1.7;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .biodata-page {
+        padding: 40px 20px;
+    }
+
+    .biodata-header {
+        flex-direction: column-reverse;
+
+        gap: 25px;
+
+        text-align: center;
+    }
+
+    .biodata-title h1 {
+        font-size: 34px;
+    }
+
+    .detail-row {
+        grid-template-columns: 1fr;
+
+        gap: 6px;
+    }
+
+}
+.profile-image {
+    width: 170px;
+    height: 170px;
+
+    border-radius: 50%;
+
+    border: 5px solid #0891b2;
+
+    padding: 5px;
+
+    overflow: hidden;
+
+    background: white;
+
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+.biodata-top {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 40px;
+
+    padding: 0 60px;
+}
+
+.biodata-title h1 {
+    font-size: 42px;
+
+    color: #172554;
+
+    margin: 0;
+}
+
+
+/* PHOTO ON RIGHT */
+
+.profile-image {
+    width: 150px;
+
+    height: 150px;
+
+    border-radius: 50%;
+
+    border: 5px solid #0891b2;
+
+    padding: 5px;
+
+    overflow: hidden;
+
+    background: white;
+}
+
+.profile-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* DETAILS */
+
+.personal-details {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.detail-row {
+    display: grid;
+
+    grid-template-columns: 220px 1fr;
+
+    padding: 15px 10px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.detail-label {
+    font-weight: bold;
+
+    color: #172554;
+}
+
+.detail-value {
+    color: #455a64;
+}
